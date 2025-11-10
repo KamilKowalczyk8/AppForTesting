@@ -80,7 +80,7 @@ fun TopBar(navController: NavHostController) {
         title = { Text(title) },
         navigationIcon = {
             if (currentRoute != Screen.Home.route) {
-                IconButton(onClick = { navController.navigateUp() }) { // Back button
+                IconButton(onClick = { navController.navigateUp() }) { 
                     Icon(Icons.Default.ArrowBack, contentDescription = "Wstecz")
                 }
             }
